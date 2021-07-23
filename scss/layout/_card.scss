@@ -1,7 +1,13 @@
 .card-content {
     display: flex;
+    @media (max-width: 570px) {
+        flex-direction: column;
+    }
     .card {
         width: 50%;
+        @media (max-width: 570px) {
+            width: 100%;
+        }
 
         .card-img {
             background-repeat: no-repeat;
@@ -12,6 +18,9 @@
             display: flex;
             flex-direction: column-reverse;
             align-items: flex-start;
+            @media (max-width: 598px) {
+                width: 100%;
+            }
             .description {
                 font-size: 14px;
                 font-weight: bold;
