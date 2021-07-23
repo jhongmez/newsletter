@@ -1,3 +1,149 @@
-h1 {
-    font-family: $blog-b;
+header {
+
+    .header {
+        background-image: url('../../public/img/backgrounds/b-header.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+
+        .header-info {
+            &__title {
+                background-color: $secondary;
+                border-radius: 0 40px 40px 0;
+                width: 100%;
+                padding: 10px 0 10px 40px;
+                h1 {
+                    color: $white;
+                    p {
+                        font-size: 17px;
+                        font-family: $blog-b;
+                    }
+                }
+            }
+            &__date {
+                background-color: $primary;
+                border-radius: 0 40px 40px 0;
+                padding: 10px 0 10px 40px;
+                p {
+                    color: $white;
+                    font-family: $arial;
+                    font-size: 13px;
+                }
+            }
+        }
+        .header-logo {
+            padding-right: 50px;
+        }
+    }
+}
+
+#editorial{
+    .card-content {
+        .editorial {
+            .card-img {
+                height: 0;
+                .description {
+                    color: $secondary;
+                    background-color: $white;
+                }
+            }
+            .card-background {
+                background-color: $white1;
+                height: 100%;
+                .card-header {
+                    .title {
+                        h2{
+                            color: $secondary;
+                        }
+                    }
+                    .text {
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .note {
+            .card-img {
+                background-image: url('../../public/img/global/rana.svg');
+                .description {
+                    color: $secondary;
+                    background-color: $white;
+                }
+            }
+            .card-background {
+                background-color: $secondary;
+                .card-header {
+                    .title {
+                        h2 {
+                            color: $white;
+                            font-family: $arial;
+                        }
+                        p {
+                            color: $white;
+                            font-size: 18px;
+                        }
+                    }
+                    .text {
+                        line-height: 18px;
+                        color: $white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#interview {
+    .card-content {
+        .interview {
+            .card-img {
+                background-image: url('../../public/img/global/women.svg');
+                .description {
+                    color: $secondary;
+                    background-color: $white;
+                }
+            }
+            .card-background {
+                background-color: $white1;
+                .card-header {
+                    .title {
+                        color: $primary;
+                    }
+                    .text {
+                        line-height: 18px;
+                    }
+                }
+            }
+
+        }
+        .study {
+            .card-img {
+                background-image: url('../../public/img/global/sea.svg');
+                .description {
+                    color: $secondary;
+                    background-color: $white;
+                }
+            }
+            .card-background {
+                background-color: $black2;
+                .card-header {
+                    .title {
+                        color: $primary;
+                    }
+                    .text {
+                        color: $white;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
