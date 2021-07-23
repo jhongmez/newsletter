@@ -622,6 +622,9 @@ header .header .header-logo {
   header .header .header-logo {
     padding-right: 0;
   }
+  header .header .header-logo img {
+    width: 100%;
+  }
 }
 
 #editorial .card-content .editorial .card-img {
@@ -646,11 +649,32 @@ header .header .header-logo {
 
 #editorial .card-content .editorial .card-background .card-header .title h2 {
   color: #16685E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 598px) {
+  #editorial .card-content .editorial .card-background .card-header .title h2 {
+    text-align: center;
+  }
+  #editorial .card-content .editorial .card-background .card-header .title h2 .line {
+    background-image: url("../../public/img/icons/ic_line.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 20px;
+  }
 }
 
 @media (max-width: 570px) {
   #editorial .card-content .editorial .card-background .card-header .title h2 {
     text-align: center;
+    padding-bottom: 40px;
   }
 }
 
@@ -830,6 +854,12 @@ header .header .header-logo {
 @media (max-width: 510px) {
   #integration .integration .integration-list li {
     width: 42%;
+  }
+}
+
+@media (max-width: 510px) {
+  #integration .integration .integration-list li {
+    width: 100%;
   }
 }
 
